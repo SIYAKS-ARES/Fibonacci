@@ -11,6 +11,6 @@ public class BedenKitleİndeksi {
         double boy = scanner.nextDouble();
         double bki = kilo / (boy*boy);
         System.out.print("Beden Kitle İndeksiniz:" + bki);
-
+        scanner.close();
     }
 }
