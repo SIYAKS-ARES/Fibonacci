@@ -10,17 +10,16 @@ public class finalalgo6 {
 
 
     static class Calisan {
-        private int sicilNo;
         private String adSoyad;
         private double maas;
 
         Calisan(String a, int s, double m) {
-            sicilNo = s;
             adSoyad = a;
             maas = m;
         }
 
         public void bilgileriGoster() {
+            System.out.println("Ad Soyad: " + adSoyad + ", Maas: " + maas);
         }
     }
 }

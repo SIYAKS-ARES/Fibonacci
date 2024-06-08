@@ -8,5 +8,6 @@ public class FinalLogaritma {
         int b = scanner.nextInt();
         double sonuc = Math.log10(b) / Math.log10(a);
         System.out.println("Sonuç :" + sonuc);
+        scanner.close();
     }
 }

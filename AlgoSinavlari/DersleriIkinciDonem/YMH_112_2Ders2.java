@@ -9,17 +9,13 @@ public class YMH_112_2Ders2 { //Recursive fonksiyonlar, kendini çağıran/yinel
         else
             return (n*faktoriyel(n-1));
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Faktöriyelini hesaplamak istediğiniz sayıyı giriniz: ");
         int sayi = scanner.nextInt();
         System.out.print(sayi + " sayısının faktöriyeli: " + faktoriyel(sayi));
 
-
-        String msj = scanner.nextLine();
-
-        char opsiyon = scanner.next().charAt(0);
-
-
+        scanner.close();
     }
 }

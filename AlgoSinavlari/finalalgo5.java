@@ -5,29 +5,30 @@ import java.util.Scanner;
 
 public class finalalgo5 {
     public static void main(String[] args) {
-Scanner giris = new Scanner(System.in);
-boolean tamamMi;
+        Scanner giris = new Scanner(System.in);
+        boolean tamamMi;
 
-tamamMi = true;
-do {
-try {
-System.out.println("Bir tam sayı giriniz: ");
-int sayi = giris.nextInt();
+        tamamMi = true;
+        do {
+            try {
+                System.out.println("Bir tam sayı giriniz: ");
+                int sayi = giris.nextInt();
 
-System.out.println("Girilen sayi " + sayi + " dir.");
+                System.out.println("Girilen sayi " + sayi + " dir.");
 
-tamamMi = false;
-}
+                tamamMi = false;
+            }
 
-catch(InputMismatchException ex) {
-System.out.println("Tekrar deneyin. (Gecersiz giris:" +
-" bir tam sayi gerekiyor)");
-giris.nextInt();
-}
+            catch (InputMismatchException ex) {
+                System.out.println("Tekrar deneyin. (Gecersiz giris:" +
+                        " bir tam sayi gerekiyor)");
+                giris.next();
+            }
 
-}
-while(tamamMi);
-}
+        } while (tamamMi);
+
+        giris.close();
+    }
 
 }
 

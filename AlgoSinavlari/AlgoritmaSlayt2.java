@@ -16,8 +16,10 @@ public class AlgoritmaSlayt2 {
             if (ortalama > 50) {
                 System.out.println("Başarılı bir öğrencisiniz, tebrikler!");
             } else {
-                System.out.println("Başarısız bir öğrencisiniz, daha verimli çalışmak için danışmanın yanına gidebilirsiniz!");
+                System.out.println(
+                        "Başarısız bir öğrencisiniz, daha verimli çalışmak için danışmanın yanına gidebilirsiniz!");
             }
         }
+        scanner.close();
     }
 }

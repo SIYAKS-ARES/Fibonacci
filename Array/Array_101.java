@@ -1,6 +1,7 @@
 package Array;
 
-import java.util.Scanner;
+// The import java.util.Scanner is removed since it is not used
+
 
 public class Array_101 {
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class OOPAtm {
 
-    public void calistirma(Hesap hesap){
+    public void calistirma(Hesap hesap) {
 
         System.out.println("Yazılım Banka Hoşgeldiniz...");
         System.out.println("**************************************");
@@ -14,22 +14,22 @@ public class OOPAtm {
 
         Login login = new Login();
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        while (true) {
-            if (login.login(hesap)) {
-                System.out.println("Giriş Başarılı!");
-                break;
-            } else {
-                System.out.println("Giriş Başarısız!");
-                giris_hakki -= 1;
-                System.out.println("Kalan giriş hakkı: " + giris_hakki);
+            while (true) {
+                if (login.login(hesap)) {
+                    System.out.println("Giriş Başarılı!");
+                    break;
+                } else {
+                    System.out.println("Giriş Başarısız!");
+                    giris_hakki -= 1;
+                    System.out.println("Kalan giriş hakkı: " + giris_hakki);
+                }
+                if (giris_hakki == 0) {
+                    System.out.println("Çok fazla yanlış girdiniz. Giriş hakkı kalmadı!\nSistemden çıkılıyor...");
+                    return;
+                }
             }
-            if (giris_hakki == 0) {
-                System.out.println("Çok fazla yanlış girdiniz. Giriş hakkı kalmadı!\nSistemden çıkılıyor...");
-                return;
-            }
-        }
 
             System.out.println("*************************************");
             String islemler = """
@@ -41,8 +41,7 @@ public class OOPAtm {
             System.out.print(islemler);
             System.out.println("*************************************");
 
-            label:
-            while (true){
+            label: while (true) {
                 System.out.print("Bir işlem seçiniz: ");
                 String islem = scanner.nextLine();
                 switch (islem) {
@@ -71,29 +70,32 @@ public class OOPAtm {
             }
 
         }
-        public void calistirma2(Hesap hesap2){
+
+    }
+
+    public void calistirma2(Hesap hesap2) {
 
         Login login2 = new Login();
 
         int giris_hakki = 3;
         Scanner scanner = new Scanner(System.in);
 
+        try {
+            while (true) {
 
-        while (true) {
-            
-            if (login2.login(hesap2)) {
-                System.out.println("Giriş Başarılı!");
-                break;
-            } else {
-                System.out.println("Giriş Başarısız!");
-                giris_hakki -= 1;
-                System.out.println("Kalan giriş hakkı: " + giris_hakki);
+                if (login2.login(hesap2)) {
+                    System.out.println("Giriş Başarılı!");
+                    break;
+                } else {
+                    System.out.println("Giriş Başarısız!");
+                    giris_hakki -= 1;
+                    System.out.println("Kalan giriş hakkı: " + giris_hakki);
+                }
+                if (giris_hakki == 0) {
+                    System.out.println("Çok fazla yanlış girdiniz. Giriş hakkı kalmadı!\nSistemden çıkılıyor...");
+                    return;
+                }
             }
-            if (giris_hakki == 0) {
-                System.out.println("Çok fazla yanlış girdiniz. Giriş hakkı kalmadı!\nSistemden çıkılıyor...");
-                return;
-            }
-        }
 
             System.out.println("*************************************");
             String islemler = """
@@ -105,8 +107,7 @@ public class OOPAtm {
             System.out.print(islemler);
             System.out.println("*************************************");
 
-            label:
-            while (true){
+            label: while (true) {
                 System.out.print("Bir işlem seçiniz: ");
                 String islem = scanner.nextLine();
                 switch (islem) {
@@ -133,6 +134,9 @@ public class OOPAtm {
                         break;
                 }
             }
+        } finally {
+            scanner.close();
+        }
 
     }
 

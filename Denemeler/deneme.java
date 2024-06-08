@@ -1,6 +1,7 @@
 package Denemeler;
 
-import java.util.Scanner;
+// The import java.util.Scanner is not needed since it is not used
+
 
 public class deneme {
   public static void main(String[] args){

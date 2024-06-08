@@ -13,4 +13,7 @@ public class FibonacciDiziler {
         }
         for (int j = 0; j < boy; j++){
             System.out.print(fibonacci[j] + " ");
-        }}}
+        }
+        scanner.close();
+    }
+}

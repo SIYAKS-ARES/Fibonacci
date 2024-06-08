@@ -1,16 +1,15 @@
 package AlgoSinavlari;
 
 public class finalalgo7 {
-      public static void main(String[] args) {
-   A a = new A();
-   B b = new B();
-   C c = new C();
-   a.p("10");
-   a.p(10.0);
-   a.p(10);
-   b.p(10);
-   b.p(10.0);
-   }
+  public static void main(String[] args) {
+    A a = new A();
+    B b = new B();
+    a.p("10");
+    a.p(10.0);
+    a.p(10);
+    b.p(10);
+    b.p(10.0);
+  }
   }
 class C {
 public void p(int i) {
