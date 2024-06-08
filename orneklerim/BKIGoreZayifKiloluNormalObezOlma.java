@@ -21,5 +21,6 @@ public class BKIGoreZayifKiloluNormalObezOlma {
          else {
              System.out.println("Obezsiniz, bir doktara görğnmenizde fayda var. bki:" + bki);
          }
+        scanner.close();
     }
 }

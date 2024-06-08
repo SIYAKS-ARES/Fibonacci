@@ -18,6 +18,7 @@ public class fibonacci {
             System.out.print(", "+ result );
             System.out.print("");
         }
-        }
+        scanner.close();
     }
+}
 

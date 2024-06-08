@@ -25,5 +25,6 @@ public class GirilenSayininArmstrongOlupOlmamaDurumunuKontrol {
         }else {
             System.err.println("Girdiğiniz sayı bir Armstrong sayısı değildir...");
         }
+        scanner.close();
     }
 }

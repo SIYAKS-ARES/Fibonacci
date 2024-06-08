@@ -47,5 +47,6 @@ public class GelismisBirNotHesaplama {
         else {
             System.out.println("FF aldınız, DERSTEN KALDINIZ!!!");
         }
+        scanner.close();
     }
 }

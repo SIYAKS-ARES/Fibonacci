@@ -18,5 +18,6 @@ public class SifreDogrulama {
         }
 
         System.out.println("I love Java");
+        scanner.close();
     }
 }

@@ -15,6 +15,7 @@ public class KullanicidanAlinanSayilarinDegistirilmesi {
 
         System.out.println("Birinci sayı: " + birinci_sayi);
         System.out.print("İkinci sayı: " + ikinci_sayi);
+        scanner.close();
     }
 
 }

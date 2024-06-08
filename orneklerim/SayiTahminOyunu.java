@@ -24,5 +24,6 @@ public class SayiTahminOyunu {
                 tahmin = scanner.nextInt();
         }
                 System.out.println("Doğru bildiniz, tebrikler!!!");
+        scanner.close();
     }
 }

@@ -11,5 +11,6 @@ public class DikÜçgeninHipotenüsünüBulma {
         int b = scanner.nextInt();
         double h = Math.sqrt(a*a+b*b);
         System.out.println("Üçgeninizin hipotenüsü:" + h );
+        scanner.close();
     }
 }

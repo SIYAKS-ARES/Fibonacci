@@ -15,13 +15,15 @@ public class KullanicidanAlinanIkiSayininEbobu {
         }
         return ebob;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Lütfen birinci sayıyı giriniz: ");
         int birinci_sayi = scanner.nextInt();
         System.out.print("Lütfen ikinci sayıyı giriniz: ");
         int ikinci_sayi = scanner.nextInt();
 
-        System.out.println("Girilen iki sayının ebobu: " + ebobBulma(birinci_sayi,ikinci_sayi));
+        System.out.println("Girilen iki sayının ebobu: " + ebobBulma(birinci_sayi, ikinci_sayi));
+        scanner.close();
     }
 }

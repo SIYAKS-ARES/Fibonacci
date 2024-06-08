@@ -14,6 +14,6 @@ public class ForIleFaktoriyel {
             faktoriyel *= i ;
         }
         System.out.print(n + " sayısının faktöriyeli:" + faktoriyel);
-
+        scanner.close();
     }
 }

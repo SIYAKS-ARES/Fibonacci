@@ -12,6 +12,8 @@ public class KullanicininGirisYasiSaglama {
             System.out.print("Giriş Yapabilirsiniz!!!");
         }
         else
-            System.out.print("Giriş Yapamazsınız!!!");
+        System.out.print("Giriş Yapamazsınız!!!");
+
+        scanner.close();
     }
 }

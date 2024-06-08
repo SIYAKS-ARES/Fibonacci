@@ -26,5 +26,6 @@ public class GecerNot {
         else {
             System.out.print("Bu Dersten Kaldınız!!!");
         }
+        scanner.close();
     }
 }

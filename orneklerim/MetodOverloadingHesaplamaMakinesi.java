@@ -70,6 +70,6 @@ public class MetodOverloadingHesaplamaMakinesi {
                 System.out.println("İşlem sonucu: " + fark(birinci_sayi,ikinci_sayi,ucuncu_sayi));
             }
         }
-
+        scanner.close();
     }
 }

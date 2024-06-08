@@ -16,5 +16,6 @@ public class EnBuyukSayiBulma {
         else{
             System.out.println("En büyük sayı: " + c);
         }
+        scanner.close();
     }
 }

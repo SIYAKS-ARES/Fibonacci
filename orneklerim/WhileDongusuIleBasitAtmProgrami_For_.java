@@ -101,5 +101,6 @@ public class WhileDongusuIleBasitAtmProgrami_For_ {
                 System.err.print("Yanlış seçim!\n" + "Lütfen yukarıdaki işlemlerden bir tanesini seçiniz:");
             }
         }
+        scanner.close();
     }
 }

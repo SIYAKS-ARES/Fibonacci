@@ -22,5 +22,6 @@ public class EnBuyukSayiBulmaMurat {
             maks = c;
         }
         System.out.print("En Büyük Sayı: " + maks);
+        scanner.close();
     }
 }

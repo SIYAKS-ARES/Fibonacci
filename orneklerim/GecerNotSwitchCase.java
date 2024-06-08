@@ -19,5 +19,6 @@ public class GecerNotSwitchCase {
             case 60 -> System.out.print("Notunuz: DD");
             default -> System.out.print("HATA!!! 90, 85, 80, 75, 70, 65 ya da 60'a basınız.");
         }
+        scanner.close();
     }
 }

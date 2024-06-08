@@ -10,6 +10,6 @@ public class KurusYolHesaplama {
         System.out.print("Aracınız Kaç Km Yol Aldı?:");
         double km = scanner.nextDouble();
         System.out.print("Toplam Ödemeniz Gereken Tutar " + (kurus*km) + "Tl dir...");
-
+        scanner.close();
     }
 }

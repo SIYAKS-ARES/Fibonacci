@@ -1,6 +1,5 @@
 package Orneklerim;
 
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class SwitchCaseHesapMakinesi {
@@ -28,5 +27,6 @@ public class SwitchCaseHesapMakinesi {
             case 4 -> System.out.println("İşleminizin sonucu:" + ((double)num1/num2));
             default -> System.out.println("Lütfen geçerli bir işlem numarası giriniz!!!");
         }
+        scanner.close();
     }
 }

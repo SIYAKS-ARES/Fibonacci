@@ -32,6 +32,7 @@ public class KullaniciDortIslem {
         else{
             System.out.println("Tanımlanmamış İşlem!!!");
         }
+        scanner.close();
     }
 
 }

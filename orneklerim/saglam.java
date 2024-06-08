@@ -88,5 +88,6 @@ public class saglam {
             else System.err.println("Yanlış seçim! Lütfen aşağıdaki işlemlerden bir tanesini seçiniz");
 
         }
+        scanner.close();
     }
 }
